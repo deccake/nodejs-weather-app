@@ -30,6 +30,7 @@ app.get("/about", (req, res) => {
   res.render("about", {
     title: "About me in details",
     name: "AMol Wankhade",
+    description:'I am a Shubham Patil and I am a professional fullstack developer. With skills of Javascript,ReactJS,NodeJS,MongoDB,NextJS,CoreJava,HTML,CSS, SpringBoot'
   });
 });
 
