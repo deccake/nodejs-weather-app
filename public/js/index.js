@@ -1,5 +1,5 @@
 const getWeather = async (address) => {
-  const res = await fetch(`http://localhost:3000/weather?address=${address}`);
+  const res = await fetch(`/weather?address=${address}`);
   const data = await res.json();
   return data;
 };
@@ -15,7 +15,7 @@ weatherForm.addEventListener("submit", async (e) => {
   const address = searchElement.value;
   msgOne.textContent = "Loading...";
   msgTwo.textContent = "";
-  const res = await fetch(`http://localhost:3000/weather?address=${address}`);
+  const res = await fetch(`/weather?address=${address}`);
   const data = await res.json();
   console.log(data);
   if (!data.err) {
