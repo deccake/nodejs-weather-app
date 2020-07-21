@@ -4,6 +4,7 @@ const getWeather = async (address) => {
   return data;
 };
 
+//all dom string
 const weatherForm = document.querySelector("form");
 const searchElement = document.querySelector("input");
 const msgOne = document.querySelector("#msg-1");
